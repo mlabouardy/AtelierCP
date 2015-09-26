@@ -1,0 +1,18 @@
+#Mysql Container
+db:
+  image: mlabouardy/mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=admin
+    - MYSQL_DATABASE=projetCP
+  ports:
+    - "3306:3306"
+    
+#Apache Container
+web:
+   image: mlabouardy/apache
+   ports: 
+     - "8081:80"
+   links:
+     - db
+   volumes:
+     - /root/code:/var/www/html/projet
