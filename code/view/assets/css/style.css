@@ -63,32 +63,56 @@ body,html{
 
 .workshop-code{
 	float:left;
+	width:50px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
 }
 
 .workshop-name{
 	float:left;
+	width:150px;
+	line-height:40px;
+	text-align:center;
 }
 
 .workshop-subject{
 	float:left;
+	width:100px;
+	text-align:center;
+	line-height:40px;
 }
 
 .workshop-laboratory{
 	float:left;
+	width:100px;
+	text-align:center;
+	line-height:40px;
 }
 
 .workshop-animator{
 	float:left;
+	width:100px;
+	text-align:center;
+	line-height:40px;
 }
 
 .workshop-hours{
 	float:left;
+	width:70px;
+	text-align:center;
+	line-height:40px;
 }
 
 .workshop-location{
 	float:left;
+	width:80px;
+	text-align:center;
+	line-height:40px;
 }
 
 .workshop-description{
 	float:left;
+	line-height:40px;
+	text-align:center;
 }
