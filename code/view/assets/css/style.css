@@ -64,3 +64,31 @@ body,html{
 .workshop-code{
 	float:left;
 }
+
+.workshop-name{
+	float:left;
+}
+
+.workshop-subject{
+	float:left;
+}
+
+.workshop-laboratory{
+	float:left;
+}
+
+.workshop-animator{
+	float:left;
+}
+
+.workshop-hours{
+	float:left;
+}
+
+.workshop-location{
+	float:left;
+}
+
+.workshop-description{
+	float:left;
+}
