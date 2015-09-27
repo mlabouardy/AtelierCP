@@ -15,7 +15,7 @@ body,html{
 }
 
 .workshops-options{
-	width:800px;
+	width:900px;
 	height:30px;
 	margin:0 auto;
 	margin-top: 10px;
@@ -40,7 +40,7 @@ body,html{
 }
 
 .workshops-list{
-	width:800px;
+	width:900px;
 	height:400px;
 	margin: 0 auto;
 }
@@ -115,4 +115,30 @@ body,html{
 	float:left;
 	line-height:40px;
 	text-align:center;
+}
+
+.workshop-option-update{
+	float:left;
+	line-height:40px;
+	text-align:center;
+	width:75px;
+	background:#F44336;
+}
+
+.workshop-option-update a{
+	color:#FFF;
+	font-family:Roboto;
+}
+.workshop-option-delete{
+	float:left;
+	width:82.5px;
+	line-height:40px;
+	text-align:center;
+	background:#03A9F4;
+
+}
+
+.workshop-option-delete a{
+	color:#FFF;
+	font-family:Roboto;
 }
