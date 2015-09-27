@@ -61,32 +61,3 @@ body,html{
 	font-family: Roboto;
 }
 
-.workshop-code{
-	width:100px;
-	float:left;
-	line-height:40px;
-	background: #F44336;
-	height:100%;
-	text-align: center;
-	border-right:1px #212121 solid;
-}
-
-.workshop-name{
-	float:left;
-	width:598px;
-	line-height:40px;
-}
-
-.workshop-name p{
-    padding-left:10px;
-}
-
-.workshop-option{
-	float:right;
-	width:100px;
-	background: #F44336;
-	height:100%;
-	line-height:40px;
-	text-align: center;
-    border-left:1px #212121 solid;
-}
