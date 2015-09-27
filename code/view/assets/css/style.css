@@ -1,5 +1,92 @@
-.workshops-list{
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2'), url(http://fonts.gstatic.com/s/roboto/v15/2UX7WLTfW3W8TclTUvlFyQ.woff) format('woff');
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body,html{
+   height:100%;
+}
+
+.workshops-options{
 	width:800px;
+	height:30px;
 	margin:0 auto;
 	margin-top: 10px;
+}
+
+.workshop-btn{
+	float:right;
+	width:200px;
+	height:25px;
+	background: #F44336;
+	border:1px #212121 solid;
+	font-family: Roboto;
+	color: #FFF;
+	line-height:25px;
+	text-align:center;
+	border-radius:5px;
+}
+
+.workshop-btn a{
+	color:#FFF;
+	text-decoration: none;	
+}
+
+.workshops-list{
+	width:800px;
+	height:400px;
+	margin: 0 auto;
+}
+
+.workshops-list ul{
+	width:100%;
+	display: inline;
+}
+
+.workshops-list ul li{
+	width:100%;
+	display:block;
+	height:40px;
+	margin-bottom:5px;
+	background: #727272;
+	color:#FFF;
+	border:1px #212121 solid;
+	font-family: Roboto;
+}
+
+.workshop-code{
+	width:100px;
+	float:left;
+	line-height:40px;
+	background: #F44336;
+	height:100%;
+	text-align: center;
+	border-right:1px #212121 solid;
+}
+
+.workshop-name{
+	float:left;
+	width:598px;
+	line-height:40px;
+}
+
+.workshop-name p{
+    padding-left:10px;
+}
+
+.workshop-option{
+	float:right;
+	width:100px;
+	background: #F44336;
+	height:100%;
+	line-height:40px;
+	text-align: center;
+    border-left:1px #212121 solid;
 }
