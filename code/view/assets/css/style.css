@@ -61,3 +61,6 @@ body,html{
 	font-family: Roboto;
 }
 
+.workshop-code{
+	float:left;
+}
