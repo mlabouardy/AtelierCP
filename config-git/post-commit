@@ -1,0 +1,7 @@
+#!/bin/sh
+# Call Jenkins to start build and pass environment parameter
+#
+echo "executing post-receive hook"
+
+# cURL POST request using jenkins user with API token
+curl http://51.254.132.239:8082/job/Gestion%20des%20ateliers/build?delay=20sec
