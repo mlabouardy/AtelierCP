@@ -15,34 +15,36 @@ body,html{
 }
 
 .workshops-options{
-	width:900px;
-	height:30px;
-	margin:0 auto;
+	margin-left:138px;
+	margin-right:138px;
+	height:40px;
 	margin-top: 10px;
+	margin-bottom:5px;
 }
 
 .workshop-btn{
 	float:right;
 	width:200px;
-	height:25px;
+	height:40px;
 	background: #F44336;
 	border:1px #212121 solid;
 	font-family: Roboto;
 	color: #FFF;
-	line-height:25px;
+	font-weight:bolder;
+	line-height:40px;
 	text-align:center;
 	border-radius:5px;
 }
 
 .workshop-btn a{
 	color:#FFF;
-	text-decoration: none;	
+	font-size:13px;	
 }
 
 .workshops-list{
-	width:900px;
 	height:400px;
-	margin: 0 auto;
+	margin-left:138px;
+	margin-right:138px;
 }
 
 .workshops-list ul{
@@ -55,10 +57,16 @@ body,html{
 	display:block;
 	height:40px;
 	margin-bottom:5px;
+	font-size:13px;
 	background: #727272;
 	color:#FFF;
 	border:1px #212121 solid;
 	font-family: Roboto;
+	border-radius:5px;
+}
+
+.workshops-list ul li:first-child{
+	background:#788;
 }
 
 .workshop-code{
@@ -113,8 +121,24 @@ body,html{
 
 .workshop-description{
 	float:left;
+	width:214px;
+	font-size:13px;
 	line-height:40px;
 	text-align:center;
+}
+
+.workshop-location a,
+.workshop-code a,
+.workshop-name a,
+.workshop-subject a,
+.workshop-animator a,
+.workshop-option a,
+.workshop-hours a,
+.workshop-laboratory a,
+.workshop-description a{
+	text-decoration:none;
+	font-weight:bolder;
+	color:#FFF;
 }
 
 .workshop-option-update{
@@ -142,3 +166,49 @@ body,html{
 	color:#FFF;
 	font-family:Roboto;
 }
+
+
+.workshop-form{
+	width:700px;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+.workshop-label{
+	float:left;
+	width:100%;
+	font-family:Roboto;
+	margin-bottom:5px;
+	text-align:left;
+}
+
+.workshop-input{
+	width:200px;
+	height:25px;
+	border-radius:5px;
+	padding:5px;
+	font-family:Roboto;
+	margin-bottom:10px;
+}
+
+.workshop-area{
+	width:200px;
+	border-radius:5px;
+	padding:5px;
+	font-family:Rpboto;
+	margin-bottom:10px;
+}
+
+.workshop-btn-add{
+	width:200px;
+	border:1px #000 solid;
+	border-radius:5px;
+	font-family:roboto;
+	height:25px;
+}
+
+.workshop-option{
+	line-height:40px;
+	font-family:Roboto;
+	text-align:center;
+}	
