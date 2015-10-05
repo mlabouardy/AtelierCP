@@ -106,7 +106,7 @@ workshopApp.controller('createWorkshopCtrl',function($scope, $http, $location){
         .success(
         	function(data){
             	console.log("inserted Successfully");
-            	$window.path = '/';
+            	$location.path = '/';
         	}
         );
 	};
