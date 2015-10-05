@@ -2,12 +2,14 @@
 
 include '../controler/Functions.php';
 
-$name=$_POST['name'];
-$subject=$_POST['subject'];
-$location=$_POST['location'];
-$hours=$_POST['hours'];
-$laboratory=$_POST['laboratory'];
-$animator=$_POST['animator'];
+$data = json_decode(file_get_contents("php://input"));
+
+$name=$data->name;
+$subject=$data->subject;
+$location=$data->location;
+$hours=$data->hours;
+$laboratory=$data->laboratory;
+$animator=$data->animator;
 $description="No description available";
 
 
