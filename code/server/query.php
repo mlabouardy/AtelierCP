@@ -1,6 +1,6 @@
 <?php
 
-include 'Functions.php';
+include '../controller/functions.php';
 
 $workshops=getAllWorkshops();
 

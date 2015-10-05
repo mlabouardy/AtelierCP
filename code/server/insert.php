@@ -1,6 +1,6 @@
 <?php
 
-include '../controler/Functions.php';
+include '../controller/functions.php';
 
 $data = json_decode(file_get_contents("php://input"));
 

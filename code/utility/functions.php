@@ -1,6 +1,6 @@
 <?php
 
-include_once 'config/Connect.php';
+include_once 'config/connect.php';
 
 function getAllWorkshops(){
 	global $db;
