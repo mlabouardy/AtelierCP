@@ -90,7 +90,7 @@ workshopApp.controller('updateWorkshopCtrl',function($scope, $http, $routeParams
 	};
 });
 
-workshopApp.controller('createWorkshopCtrl',function($scope, $http){
+workshopApp.controller('createWorkshopCtrl',function($scope, $http, $location){
 	$scope.createWorkshop=function(){
 		$http.post(
 			"server/insert.php",
@@ -106,6 +106,7 @@ workshopApp.controller('createWorkshopCtrl',function($scope, $http){
         .success(
         	function(data){
             	console.log("inserted Successfully");
+            	$window.location.href = '/';
         	}
         );
 	};
