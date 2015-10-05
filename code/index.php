@@ -20,7 +20,7 @@
 		<div class="container">
 			<div class="row">
 				<a href="#" class="btn btn-info row-left">Ajouter</a>
-			</div>
+			</div><br/>
 			<div class="row">
 				<div class="panel panel-primary">
 					  <div class="panel-heading">Liste des ateliers</div>
