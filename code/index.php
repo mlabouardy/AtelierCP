@@ -16,40 +16,45 @@
 				<a href="#" class="btn btn-info">Ajouter</a>
 			</div>
 			<div class="row">
-				<table class="table table-hover table-bordered">
-					<thead>
-						<th>Code</th>
-						<th>Nom</th>
-						<th>Matiere</th>
-						<th>Laboratoire</th>
-						<th>Animateur</th>
-						<th>Horraires</th>
-						<th>Location</th>
-						<th>Description</th>
-					</thead>
-					<tbody>
-						<tr>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-						</tr>
-					</tbody>
-				</table>
+				<div class="panel panel-default">
+					  <div class="panel-heading">Liste des ateliers</div>
+					  <div class="panel-body">
+					    <table class="table table-hover table-bordered">
+							<thead>
+								<th>Code</th>
+								<th>Nom</th>
+								<th>Matiere</th>
+								<th>Laboratoire</th>
+								<th>Animateur</th>
+								<th>Horraires</th>
+								<th>Location</th>
+								<th>Description</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+					  </div>
+				</div>
 			</div>
 		</div>
 	</body>
