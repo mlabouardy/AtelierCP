@@ -30,7 +30,7 @@ workshopApp.controller('workshopsCtrl',function($scope, $http){
 });
 
 workshopApp.controller('updateWorkshopCtrl',function($scope, $http, $routeParams){
-	$http.get(
+	$http.post(
 		"server/get.php",
 		{
 			'id': $routeParams.id
@@ -38,7 +38,7 @@ workshopApp.controller('updateWorkshopCtrl',function($scope, $http, $routeParams
 	)
 	.success(
 		function(data){
-            	$scope.workshop=data;
+            $scope.workshop=data;
         }
 	);
 });
