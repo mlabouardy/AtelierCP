@@ -3,33 +3,67 @@
 	<div class="panel panel-primary">
 		<div class="panel-heading">Creation d'un atelier</div>
 		<div class="panel-body">
-			<form>
+			<form id="registrationForm">
 				<div class="form-group">
 					<label for="name">Nom:</label>
-					<input type="text" class="form-control" ng-model="name"/>
+					<input type="text" class="form-control" ng-model="name" name="name"/>
 				</div >
 				<div class="form-group">
 					<label for="subject">Matiere:</label>
-					<input type="text" class="form-control" ng-model="subject"/>
+					<input type="text" class="form-control" ng-model="subject" name="subject"/>
 				</div >
 				<div class="form-group">
 					<label for="laboratory">Laboratoire:</label>
-					<input type="text" class="form-control" ng-model="laboratory"/>
+					<input type="text" class="form-control" ng-model="laboratory" name="laboratory"/>
 				</div >
 				<div class="form-group">
 					<label for="animator">Animateur:</label>
-					<input type="text" class="form-control" ng-model="animator"/>
+					<input type="text" class="form-control" ng-model="animator" name="animator"/>
 				</div >
 				<div class="form-group">
 					<label for="hours">Horraires:</label>
-					<input type="text" class="form-control" ng-model="hours"/>
+					<input type="text" class="form-control" ng-model="hours" name="hours"/>
 				</div >
 				<div class="form-group">
 					<label for="location">Location:</label>
-					<input type="text" class="form-control" ng-model="location"/>
+					<input type="text" class="form-control" ng-model="location" name="location"/>
 				</div >
 				<button type="submit" class="btn btn-success" ng-click="createWorkshop()">Ajouter</button>
 			</form>
 		</div>
 	</div>
 </div>
+<script>
+		$("#registrationForm").validate(
+			{
+				rules:{
+					name:{
+						required:true,
+						minlength:3,
+					},
+					subject:{
+						required:true,
+						minlength:3,
+					},
+					laboratory:{
+						required:true,
+						minlength:3,
+					},
+					animator:{
+						required:true,
+						minlength:3,
+					},
+					location:{
+						required:true,
+						minlength:3,
+					}
+				},
+				highlight:function(element){
+					$(element).closest(".form-group").removeClass("has-success").addClass("has-error");
+				},
+				unhighlight:function(element){
+					$(element).closest(".form-group").removeClass("has-error").addClass("has-success");
+				}
+			}		
+		);
+</script>
