@@ -13,7 +13,6 @@ $animator=$data->animator;
 $description="No description available";
 
 
-//createWorkshop($name, $subject, $location, $hours, $laboratory, $animator, $description);
+createWorkshop($name, $subject, $location, $hours, $laboratory, $animator, $description);
 
-createWorkshop("ok", "ok", "ok", "4:00", "ok", "ok", "ok");
 ?>
