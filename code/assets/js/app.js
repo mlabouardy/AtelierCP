@@ -51,7 +51,7 @@ workshopApp.controller('workshopsCtrl',function($scope, $http){
 	}
 });
 
-workshopApp.controller('updateWorkshopCtrl',function($scope, $http, $routeParams){
+workshopApp.controller('updateWorkshopCtrl',function($scope, $http, $routeParams, $location){
 	$http.post(
 		"server/get.php",
 		{
