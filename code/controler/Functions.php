@@ -31,7 +31,6 @@ function createWorkshop($name, $subject, $location, $hours, $laboratory, $animat
 	$res->bindParam(":laboratory", $laboratory);
 	$res->bindParam(":animator", $animator);
 	$res->bindParam(":description", $description);
-	$res->bindParam(":id", $id);
 	$res->execute();
 	return true;
 }
