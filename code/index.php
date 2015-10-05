@@ -18,8 +18,8 @@
 	<body>
 		<br/><br/>
 		<div class="container">
-			<div class="row row-left">
-				<a href="#" class="btn btn-info">Ajouter</a>
+			<div class="row">
+				<a href="#" class="btn btn-info row-left">Ajouter</a>
 			</div>
 			<div class="row">
 				<div class="panel panel-primary">
