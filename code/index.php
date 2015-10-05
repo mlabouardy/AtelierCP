@@ -22,6 +22,10 @@
 				<a href="#" class="btn btn-info row-left">Ajouter</a>
 			</div><br/>
 			<div class="row">
+				<label>Rechercher</label>
+				<input type="text" />
+			</div><br/>
+			<div class="row">
 				<div class="panel panel-primary">
 					  <div class="panel-heading">Liste des ateliers</div>
 					  <div class="panel-body">
