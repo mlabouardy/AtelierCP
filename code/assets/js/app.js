@@ -49,8 +49,7 @@ workshopApp.controller('updateWorkshopCtrl',function($scope, $http, $routeParams
 	);
 });
 
-workshopApp.controller('deleteWorkshopCtrl',function($scope, $http){
-	$scope.deleteWorkshop=function(){
+workshopApp.controller('deleteWorkshopCtrl',function($scope, $http, $routeParams){
 		$http.post(
 			"server/remove.php",
 			{
@@ -62,7 +61,6 @@ workshopApp.controller('deleteWorkshopCtrl',function($scope, $http){
             	console.log("removed Successfully");
         	}
         );
-	};
 });
 
 workshopApp.controller('createWorkshopCtrl',function($scope, $http){
