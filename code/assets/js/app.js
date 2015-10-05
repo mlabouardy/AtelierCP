@@ -80,6 +80,7 @@ workshopApp.controller('updateWorkshopCtrl',function($scope, $http, $routeParams
         .success(
         	function(data){
             	console.log("Updated Successfully");
+            	$location.path('/');
         	}
         )
         .error(
@@ -106,7 +107,7 @@ workshopApp.controller('createWorkshopCtrl',function($scope, $http, $location){
         .success(
         	function(data){
             	console.log("inserted Successfully");
-            	$location.path('/aaa');
+            	$location.path('/');
         	}
         );
 	};
