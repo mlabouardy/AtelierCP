@@ -20,12 +20,6 @@ workshopApp.config(function($routeProvider){
 				controller:'updateWorkshopCtrl'
 			  }
 		)
-		.when('/workshop/delete/:id',
-			  {
-				templateUrl:"partials/delete_workshop.html",
-				controller:'deleteWorkshopCtrl'
-			  }
-		)
 		.otherwise({redirectTo:'/'});
 });
 
@@ -33,6 +27,28 @@ workshopApp.controller('workshopsCtrl',function($scope, $http){
 	$http.get("server/query.php").success(function(data){
 		$scope.workshops=data;
 	});
+
+	$scope.deleteWorkshop=function(workshopID){
+		$http.post(
+			"server/remove.php",
+			{
+				'id': workshopID
+			}
+		)
+        .success(
+        	function(data){
+        		$http.get("server/query.php").success(function(data){
+					$scope.workshops=data;
+				});
+            	console.log("DELETED Successfully");
+        	}
+        )
+        .error(
+        	function(data){
+        		console.log(error);
+        	}
+        );
+	}
 });
 
 workshopApp.controller('updateWorkshopCtrl',function($scope, $http, $routeParams){
@@ -47,25 +63,6 @@ workshopApp.controller('updateWorkshopCtrl',function($scope, $http, $routeParams
             $scope.workshop=data;
         }
 	);
-});
-
-workshopApp.controller('deleteWorkshopCtrl',function($scope, $http, $routeParams){
-		$http.post(
-			"server/remove.php",
-			{
-				'id': $routeParams.id
-			}
-		)
-        .success(
-        	function(data){
-            	console.log("removed Successfully");
-        	}
-        )
-        .error(
-        	function(data){
-        		console.log(error);
-        	}
-        );
 });
 
 workshopApp.controller('createWorkshopCtrl',function($scope, $http){
