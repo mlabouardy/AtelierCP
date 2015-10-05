@@ -1,44 +1,56 @@
 <html>
 	<head>
 		<title>Gestion des ateliers</title>
-		<link rel="stylesheet" type="text/css" href="view/assets/css/style.css"/>
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		
-		<div class="workshops-options">
-			<div class="workshop-btn"><a href="new.php">Ajouter un atelier<a></a></div>
-		</div>
-		<div class="workshops-list">
-			<ul>
-				<li class="workshop-header">
-							<div class="workshop-code"><a href="#">Code</a></div>
-							<div class="workshop-name"><a href="#">Nom</a></div>
-							<div class="workshop-subject"><a href="#">Matiere</a></div>
-							<div class="workshop-laboratory"><a href="#">Laboratoire</a></div>
-							<div class="workshop-animator"><a href="#">Animateur</a></div>
-							<div class="workshop-hours"><a href="#">Horraires</a></div>
-							<div class="workshop-location"><a href="#">Location</a></div>
-							<div class="workshop-description"><a href="#">Description</a></div>
-							<div class="workshop-option"><a href="#">Options</a></div>
-				</li>
-				<?php
-					include 'controler/Functions.php';
-					$workshops=getAllWorkshops();
-				  foreach($workshops as $workshop){ ?>
-						<li>
-							<div class="workshop-code"><?= $workshop['id'] ?></div>
-							<div class="workshop-name"><?= $workshop['name'] ?></div>
-							<div class="workshop-subject"><?= $workshop['subject'] ?></div>
-							<div class="workshop-laboratory"><?= $workshop['laboratory'] ?></div>
-							<div class="workshop-animator"><?= $workshop['animator'] ?></div>
-							<div class="workshop-hours"><?= $workshop['hours'] ?></div>
-							<div class="workshop-location"><?= $workshop['location'] ?></div>
-							<div class="workshop-description"><?= $workshop['description'] ?></div>
-							<div class="workshop-option-update"><a href="update.php?id=<?= $workshop['id'] ?>">Modifier</a></div>
-							<div class="workshop-option-delete"><a href="delete.php?id=<?= $workshop['id'] ?>">Supprimer</a></div>
-						</li>
-				<?php } ?>
-			</ul>
+		<div class="container">
+			<div class="row">
+				<a href="#" class="btn btn-info">Ajouter</a>
+			</div>
+			<div class="row">
+				<table class="table table-hover table-bordered">
+					<thead>
+						<th>Code</th>
+						<th>Nom</th>
+						<th>Matiere</th>
+						<th>Laboratoire</th>
+						<th>Animateur</th>
+						<th>Horraires</th>
+						<th>Location</th>
+						<th>Description</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</body>
 </html>
