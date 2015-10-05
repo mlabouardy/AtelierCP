@@ -14,6 +14,12 @@ workshopApp.config(function($routeProvider){
 				controller:'createWorkshopCtrl'
 			  }
 		)
+		.when('/workshop/:id',
+			  {
+				templateUrl:"partials/update_workshop.html",
+				controller:'updateWorkshopCtrl'
+			  }
+		)
 		.otherwise({redirectTo:'/'});
 });
 
@@ -21,6 +27,20 @@ workshopApp.controller('workshopsCtrl',function($scope, $http){
 	$http.get("http://51.254.132.239:8081/projet/controler/getWorkshops.php").success(function(data){
 		$scope.workshops=data;
 	});
+});
+
+workshopApp.controller('updateWorkshopCtrl',function($scope, $http, $routeParams){
+	$http.get(
+		"server/query.php",
+		{
+			"id":$routeParams.id;
+		}
+	)
+	.success(
+		function(data){
+            	$scope.workshop=data;
+        }
+	);
 });
 
 workshopApp.controller('createWorkshopCtrl',function($scope, $http){
