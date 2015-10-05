@@ -23,7 +23,7 @@
 			</div><br/>
 			<div class="row">
 				<label>Rechercher</label>
-				<input type="text" />
+				<input type="text" class="form-control"/>
 			</div><br/>
 			<div class="row">
 				<div class="panel panel-primary">
