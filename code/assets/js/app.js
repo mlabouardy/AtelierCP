@@ -40,7 +40,7 @@ workshopApp.controller('workshopsCtrl',function($scope, $http){
         		$http.get("server/query.php").success(function(data){
 					$scope.workshops=data;
 				});
-            	console.log("DELETED Successfully");
+            	console.log("Deleted Successfully");
         	}
         )
         .error(
@@ -63,6 +63,31 @@ workshopApp.controller('updateWorkshopCtrl',function($scope, $http, $routeParams
             $scope.workshop=data;
         }
 	);
+
+	$scope.updateWorkshop=function(){
+		$http.post(
+			"server/update.php",
+			{
+				'id': $scope.workshop.id,
+				'name': $scope.workshop.name,
+				'subject': $scope.workshop.subject,
+				'location': $scope.workshop.location,
+				'hours': $scope.workshop.hours,
+				'laboratory': $scope.workshop.laboratory,
+				'animator': $scope.workshop.animator
+			}
+		)
+        .success(
+        	function(data){
+            	console.log("Updated Successfully");
+        	}
+        )
+        .error(
+        	function(data){
+        		console.log(error);
+        	}
+        );
+	};
 });
 
 workshopApp.controller('createWorkshopCtrl',function($scope, $http){
