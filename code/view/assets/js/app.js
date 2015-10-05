@@ -31,7 +31,7 @@ workshopApp.controller('workshopsCtrl',function($scope, $http){
 
 workshopApp.controller('updateWorkshopCtrl',function($scope, $http, $routeParams){
 	$http.get(
-		"server/query.php",
+		"server/get.php",
 		{
 			"id":$routeParams.id;
 		}
