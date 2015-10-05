@@ -60,6 +60,11 @@ workshopApp.controller('deleteWorkshopCtrl',function($scope, $http, $routeParams
         	function(data){
             	console.log("removed Successfully");
         	}
+        )
+        .error(
+        	function(data){
+        		console.log(error);
+        	}
         );
 });
 
