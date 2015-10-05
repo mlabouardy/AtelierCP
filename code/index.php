@@ -26,8 +26,8 @@
 			</div><br/>
 			<div class="row">
 				<label>Rechercher</label>
-				<input type="text" class="form-control"/>
-			</div><br/>
+				<input type="text" class="form-control" ng-model="name"/>
+			</div><br/>a
 			<div class="row" ng-controller="workshopsCtrl">
 				<div class="panel panel-primary">
 					  <div class="panel-heading">Liste des ateliers</div>
@@ -44,7 +44,7 @@
 								<th>Options</th>
 							</thead>
 							<tbody>
-								<tr ng-repeat="workshop in workshops">
+								<tr ng-repeat="workshop in workshops |filter:'name'">
 									<td>{{workshop.id}}</td>
 									<td>{{workshop.name}}</td>
 									<td>{{workshop.subject}}</td>
