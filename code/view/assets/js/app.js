@@ -1,6 +1,6 @@
 var workshopApp=angular.module('workshopApp',['ngRoute']);
 
-workshop.config(function($routeProvider){
+workshopApp.config(function($routeProvider){
 	$routeProvider
 		.when('/',
 			  {
