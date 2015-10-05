@@ -9,10 +9,15 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<style>
+		.row-left{
+			float:right;
+		}
+	</style>
 	</head>
 	<body>
 		<div class="container">
-			<div class="row">
+			<div class="row row-left">
 				<a href="#" class="btn btn-info">Ajouter</a>
 			</div>
 			<div class="row">
