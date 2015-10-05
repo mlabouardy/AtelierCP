@@ -10,7 +10,7 @@ workshopApp.config(function($routeProvider){
 		)
 		.when('/sa',
 			  {
-				template:"partials/new_workshop.html",
+				templateUrl:"partials/new_workshop.html",
 				controller:'workshopsCtrl'
 			  }
 		)
