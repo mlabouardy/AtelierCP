@@ -6,29 +6,29 @@
 			<form>
 				<div class="form-group">
 					<label for="name">Nom:</label>
-					<input type="text" class="form-control"/>
+					<input type="text" class="form-control" ng-model="name"/>
 				</div >
 				<div class="form-group">
 					<label for="subject">Matiere:</label>
-					<input type="text" class="form-control"/>
+					<input type="text" class="form-control" ng-model="subject"/>
 				</div >
 				<div class="form-group">
 					<label for="laboratory">Laboratoire:</label>
-					<input type="text" class="form-control"/>
+					<input type="text" class="form-control" ng-model="laboratory"/>
 				</div >
 				<div class="form-group">
 					<label for="animator">Animateur:</label>
-					<input type="text" class="form-control"/>
+					<input type="text" class="form-control" ng-model="animator"/>
 				</div >
 				<div class="form-group">
 					<label for="hours">Horraires:</label>
-					<input type="text" class="form-control"/>
+					<input type="text" class="form-control" ng-model="hours"/>
 				</div >
 				<div class="form-group">
 					<label for="location">Location:</label>
-					<input type="text" class="form-control"/>
+					<input type="text" class="form-control" ng-model="location"/>
 				</div >
-				<button type="submit" class="btn btn-success">Ajouter</button>
+				<button type="submit" class="btn btn-success" ng-click="createWorkshop()">Ajouter</button>
 			</form>
 		</div>
 	</div>
