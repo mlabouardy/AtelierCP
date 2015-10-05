@@ -28,7 +28,7 @@ workshopApp.controller('createWorkshopCtrl',function($scope, $http){
 		$http.post(
 			"server/insert.php",
 			{
-				'name': $scope.fname,
+				'name': $scope.name,
 				'subject': $scope.subject,
 				'location': $scope.locationW,
 				'hours': $scope.hours,
