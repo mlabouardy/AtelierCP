@@ -22,9 +22,17 @@ function deleteWorkshop($id){
 
 function createWorkshop($name, $subject, $location, $hours, $laboratory, $animator, $description){
 	global $db;
-	$sql_create_workshop = "INSERT INTO Atelier(name, subject, location, hours, laboratory, animator, description) VALUES(?,?,?,?,?,?,?)";
+	$sql_create_workshop = "INSERT INTO Atelier(name, subject, location, hours, laboratory, animator, description) VALUES(:name,:subject,:location,:hours,:laboratory,:animator,:description)";
 	$res=$db->prepare($sql_create_workshop);
-	$res->execute(array($name, $subject, $location, $hours, $laboratory, $animator, $description));
+	$res->bindParam(":name", $name);
+	$res->bindParam(":subject", $subject);
+  	$res->bindParam(":location", $location);
+	$res->bindParam(":hours", $hours);
+	$res->bindParam(":laboratory", $laboratory);
+	$res->bindParam(":animator", $animator);
+	$res->bindParam(":description", $description);
+	$res->bindParam(":id", $id);
+	$res->execute();
 	return true;
 }
 
@@ -35,7 +43,7 @@ function updateWorkshop($name, $subject, $location, $hours, $laboratory, $animat
 	$res=$db->prepare($sql_update_workshop);
 	$res->bindParam(":name", $name);
 	$res->bindParam(":subject", $subject);
-  $res->bindParam(":location", $location);
+  	$res->bindParam(":location", $location);
 	$res->bindParam(":hours", $hours);
 	$res->bindParam(":laboratory", $laboratory);
 	$res->bindParam(":animator", $animator);

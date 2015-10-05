@@ -30,7 +30,7 @@ workshopApp.controller('createWorkshopCtrl',function($scope, $http){
 			{
 				'name': $scope.fname,
 				'subject': $scope.subject,
-				'location': $scope.location,
+				'location': $scope.locationW,
 				'hours': $scope.hours,
 				'laboratory': $scope.laboratory,
 				'animator': $scope.animator
