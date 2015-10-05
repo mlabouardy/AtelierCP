@@ -20,50 +20,7 @@
 	</style>
 	</head>
 	<body>
-		<br/><br/>
-		<div class="container">
-			<div class="row">
-				<a href="#" class="btn btn-info row-left">Ajouter</a>
-			</div><br/>
-			<div class="row">
-				<label>Rechercher</label>
-				<input type="text" class="form-control" ng-model="name"/>
-			</div><br/>
-			<div class="row" ng-controller="workshopsCtrl">
-				<div class="panel panel-primary">
-					  <div class="panel-heading">Liste des ateliers</div>
-					  <div class="panel-body">
-					    <table class="table table-hover table-bordered">
-							<thead>
-								<th>Code</th>
-								<th>Nom</th>
-								<th>Matiere</th>
-								<th>Laboratoire</th>
-								<th>Animateur</th>
-								<th>Horraires</th>
-								<th>Location</th>
-								<th>Options</th>
-							</thead>
-							<tbody>
-								<tr ng-repeat="workshop in workshops | filter:name">
-									<td>{{workshop.id}}</td>
-									<td>{{workshop.name}}</td>
-									<td>{{workshop.subject}}</td>
-									<td>{{workshop.animator}}</td>
-									<td>{{workshop.laboratory}}</td>
-									<td>{{workshop.hours}}</td>
-									<td>{{workshop.location}}</td>
-									<td>
-										<a href="#" class="btn btn-success">Modifier</a>
-										<a href="#" class="btn btn-danger">Supprimer</a>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					  </div>
-				</div>
-			</div>
-		</div>
+		<div ng-view></div>
 	</body>
 </html>
 
