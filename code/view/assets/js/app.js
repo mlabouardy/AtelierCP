@@ -33,7 +33,7 @@ workshopApp.controller('updateWorkshopCtrl',function($scope, $http, $routeParams
 	$http.get(
 		"server/get.php",
 		{
-			"id":$routeParams.id;
+			'id': $routeParams.id
 		}
 	)
 	.success(
