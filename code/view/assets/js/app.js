@@ -4,7 +4,7 @@ workshopApp.config(function($routeProvider){
 	$routeProvider
 		.when('/',
 			  {
-				template:"<h3>ok</h3>",
+				templateUrl:"partials/workshops.html",
 				controller:'workshopsCtrl'
 			  }
 		)
