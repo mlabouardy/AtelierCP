@@ -1,8 +1,8 @@
 <?php
 
-define('HOSTNAME','51.254.132.239');
+define('HOSTNAME','localhost');
 define('DBASE','projetCP');
 define('USERNAME','root');
-define('PASSWORD','admin');
+define('PASSWORD','root');
 
 ?>
